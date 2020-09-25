@@ -12,7 +12,6 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-# Customize
 remote_theme : mmistakes/minimal-mistakes
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -21,7 +20,7 @@ locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "senghan1992"
+name                     : "Your Name"
 description              : "An amazing website."
 url                      : "https://senghan1992.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -281,5 +280,3 @@ defaults:
       comments: # true
       share: true
       related: true
-      
-
