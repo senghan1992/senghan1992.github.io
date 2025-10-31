@@ -1,29 +1,52 @@
 import Container from "@/app/_components/container";
-import { HeroPost } from "@/app/_components/hero-post";
-import { Intro } from "@/app/_components/intro";
-import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPosts } from "@/lib/api";
+import { HeroSection } from "@/app/_components/portfolio/hero-section";
+import { AboutSection } from "@/app/_components/portfolio/about-section";
+import { ExperienceSection } from "@/app/_components/portfolio/experience-section";
+import { SkillsSection } from "@/app/_components/portfolio/skills-section";
+import { ProjectsSection } from "@/app/_components/portfolio/projects-section";
+import { ContactSection } from "@/app/_components/portfolio/contact-section";
+import portfolioData from "@/data/portfolio.json";
 
 export default function Index() {
-  const allPosts = getAllPosts();
-
-  const heroPost = allPosts[0];
-
-  const morePosts = allPosts.slice(1);
-
   return (
     <main>
       <Container>
-        <Intro />
-        <HeroPost
-          title={heroPost.title}
-          coverImage={heroPost.coverImage}
-          date={heroPost.date}
-          author={heroPost.author}
-          slug={heroPost.slug}
-          excerpt={heroPost.excerpt}
+        <HeroSection
+          name={portfolioData.profile.name}
+          title={portfolioData.profile.title}
+          bio={portfolioData.profile.bio}
+          profileImage={portfolioData.profile.profileImage}
+          email={portfolioData.profile.email}
+          github={portfolioData.profile.github}
+          linkedin={portfolioData.profile.linkedin}
         />
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+
+        <div className="border-t border-gray-200 dark:border-gray-700 my-8"></div>
+
+        <AboutSection
+          description={portfolioData.about.description}
+          highlights={portfolioData.about.highlights}
+        />
+
+        <div className="border-t border-gray-200 dark:border-gray-700 my-8"></div>
+
+        <ExperienceSection experiences={portfolioData.experience} />
+
+        <div className="border-t border-gray-200 dark:border-gray-700 my-8"></div>
+
+        <SkillsSection skills={portfolioData.skills} />
+
+        <div className="border-t border-gray-200 dark:border-gray-700 my-8"></div>
+
+        <ProjectsSection projects={portfolioData.projects} />
+
+        <div className="border-t border-gray-200 dark:border-gray-700 my-8"></div>
+
+        <ContactSection
+          email={portfolioData.profile.email}
+          github={portfolioData.profile.github}
+          linkedin={portfolioData.profile.linkedin}
+        />
       </Container>
     </main>
   );

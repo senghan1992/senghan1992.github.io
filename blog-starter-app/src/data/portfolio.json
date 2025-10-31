@@ -1,0 +1,120 @@
+{
+  "profile": {
+    "name": "홍길동",
+    "title": "Full Stack Developer",
+    "bio": "안녕하세요! 사용자 중심의 웹 애플리케이션을 만드는 개발자입니다.",
+    "email": "your.email@example.com",
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "profileImage": "https://placehold.co/512x512/3B82F6/FFFFFF/png?text=Profile",
+    "resumeUrl": "/files/resume.pdf"
+  },
+  "about": {
+    "description": "여기에 당신에 대한 상세한 소개를 작성하세요. 개발에 대한 열정, 관심 분야, 목표 등을 자유롭게 표현할 수 있습니다.\n\n여러 줄로 작성할 수 있으며, 당신의 개발 철학이나 특별히 강조하고 싶은 부분을 작성하세요.",
+    "highlights": [
+      "5년 이상의 웹 개발 경험",
+      "사용자 경험을 최우선으로 생각하는 개발",
+      "지속적인 학습과 성장을 추구"
+    ]
+  },
+  "experience": [
+    {
+      "company": "테크 컴퍼니 A",
+      "position": "Senior Full Stack Developer",
+      "period": "2022.03 - 현재",
+      "description": "주요 업무 및 성과를 작성하세요.",
+      "achievements": [
+        "React와 Next.js를 활용한 웹 애플리케이션 개발",
+        "Node.js 기반 백엔드 API 설계 및 구현",
+        "팀 내 코드 리뷰 및 기술 멘토링"
+      ]
+    },
+    {
+      "company": "스타트업 B",
+      "position": "Frontend Developer",
+      "period": "2020.01 - 2022.02",
+      "description": "초기 스타트업에서 프론트엔드 개발 담당",
+      "achievements": [
+        "Vue.js 기반 SPA 개발",
+        "UI/UX 개선으로 사용자 만족도 30% 향상",
+        "Webpack 빌드 최적화로 로딩 속도 50% 개선"
+      ]
+    }
+  ],
+  "skills": {
+    "Frontend": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vue.js"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express",
+      "NestJS",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "DevOps": [
+      "Docker",
+      "AWS",
+      "GitHub Actions",
+      "Vercel"
+    ],
+    "Tools": [
+      "Git",
+      "Figma",
+      "Jira",
+      "Notion"
+    ]
+  },
+  "projects": [
+    {
+      "title": "프로젝트 제목 1",
+      "description": "프로젝트에 대한 간단한 설명을 작성하세요. 어떤 문제를 해결했는지, 어떤 기술을 사용했는지 등을 포함할 수 있습니다.",
+      "image": "https://placehold.co/1200x630/3B82F6/FFFFFF/png?text=Project+1",
+      "tags": ["React", "Node.js", "PostgreSQL"],
+      "links": {
+        "github": "https://github.com/yourusername/project1",
+        "demo": "https://project1-demo.com"
+      },
+      "featured": true
+    },
+    {
+      "title": "프로젝트 제목 2",
+      "description": "두 번째 프로젝트에 대한 설명입니다.",
+      "image": "https://placehold.co/1200x630/3B82F6/FFFFFF/png?text=Project+2",
+      "tags": ["Next.js", "TypeScript", "Tailwind"],
+      "links": {
+        "github": "https://github.com/yourusername/project2",
+        "demo": "https://project2-demo.com"
+      },
+      "featured": true
+    },
+    {
+      "title": "프로젝트 제목 3",
+      "description": "세 번째 프로젝트에 대한 설명입니다.",
+      "image": "https://placehold.co/1200x630/3B82F6/FFFFFF/png?text=Project+3",
+      "tags": ["Vue.js", "Firebase"],
+      "links": {
+        "github": "https://github.com/yourusername/project3"
+      },
+      "featured": false
+    }
+  ],
+  "education": [
+    {
+      "school": "대학교 이름",
+      "degree": "컴퓨터공학 학사",
+      "period": "2015.03 - 2019.02"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "자격증 이름",
+      "issuer": "발급 기관",
+      "date": "2021.06"
+    }
+  ]
+}
