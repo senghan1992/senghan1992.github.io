@@ -1,9 +1,11 @@
+import { ReactNode } from "react";
+
 type Props = {
-  children?: React.ReactNode;
+  children?: ReactNode;
 };
 
 const Container = ({ children }: Props) => {
-  return <div className="container mx-auto px-5">{children}</div>;
+  return <div className="mx-auto w-full max-w-6xl px-6 md:px-10">{children}</div>;
 };
 
 export default Container;
