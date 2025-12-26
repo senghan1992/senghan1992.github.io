@@ -85,7 +85,7 @@
       "slug": "lg-ai-agent-platform",
       "title": "LG전자 데이터/AI 플랫폼",
       "description": "보안 제약 환경에서 반복적인 데이터 요청을 자동화하고, 대화형 AI Agent로 데이터 분석 워크플로우를 셀프서비스화한 플랫폼.",
-      "image": "https://placehold.co/1200x630/0E5CAD/FFFFFF/png?text=AI+Platform",
+      "image": "/images/lg-self-service-platform.png",
       "tags": ["FastAPI", "Next.js", "n8n", "AI Agent", "Docker"],
       "links": {
         "github": "https://github.com/korea-seunghwan"
@@ -126,7 +126,7 @@
       "slug": "deliverer-ops-platform",
       "title": "딜리버러 운영 플랫폼",
       "description": "배달/운영 SaaS를 위한 Admin·모바일 앱. 주문/배차/정산을 자동화하고 실시간 운영 현황을 제공.",
-      "image": "https://placehold.co/1200x630/1F2937/FFFFFF/png?text=Deliverer",
+      "image": "/images/deliverer-architecture.png",
       "tags": ["Flutter", "Node.js", "PostgreSQL", "React Admin"],
       "links": {
         "github": "https://github.com/korea-seunghwan"
@@ -165,7 +165,7 @@
       "slug": "fitpet-admin-api",
       "title": "핏펫 Admin & Backend API",
       "description": "핏펫 초기 Admin 페이지와 Backend API 서버를 구축하고 Node.js 기반 마이크로서비스로 전환.",
-      "image": "https://placehold.co/1200x630/2563EB/FFFFFF/png?text=Fitpet",
+      "image": "/images/fitpet-architecture.png",
       "tags": ["Laravel", "Node.js", "Microservices"],
       "links": {
         "github": "https://github.com/korea-seunghwan"
