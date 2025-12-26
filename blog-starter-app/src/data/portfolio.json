@@ -6,7 +6,7 @@
     "email": "senghan1992@gmail.com",
     "github": "https://github.com/korea-seunghwan",
     "linkedin": "https://korea-seunghwan.github.io",
-    "profileImage": "https://placehold.co/512x512/0E5CAD/FFFFFF/png?text=SH",
+    "profileImage": "/images/profile-seunghwan.jpg",
     "resumeUrl": "/files/resume.pdf"
   },
   "about": {
@@ -126,7 +126,7 @@
       "slug": "deliverer-ops-platform",
       "title": "딜리버러 운영 플랫폼",
       "description": "배달/운영 SaaS를 위한 Admin·모바일 앱. 주문/배차/정산을 자동화하고 실시간 운영 현황을 제공.",
-      "image": "/images/deliverer-architecture.png",
+      "image": "/images/deliverer-e2e.png",
       "tags": ["Flutter", "Node.js", "PostgreSQL", "React Admin"],
       "links": {
         "github": "https://github.com/korea-seunghwan"
@@ -165,7 +165,7 @@
       "slug": "fitpet-admin-api",
       "title": "핏펫 Admin & Backend API",
       "description": "핏펫 초기 Admin 페이지와 Backend API 서버를 구축하고 Node.js 기반 마이크로서비스로 전환.",
-      "image": "/images/fitpet-architecture.png",
+      "image": "/images/fitpet-before-after.png",
       "tags": ["Laravel", "Node.js", "Microservices"],
       "links": {
         "github": "https://github.com/korea-seunghwan"

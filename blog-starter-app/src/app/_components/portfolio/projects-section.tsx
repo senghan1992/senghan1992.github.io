@@ -35,27 +35,25 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
     <section className="py-20" id="projects">
       <div className="mb-12 flex flex-col gap-3">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0E5CAD]">
-          Work Showcase
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
+          Case Studies
         </p>
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
-          End-to-End 문제 해결 사례
+          회사별 주요 임팩트 한눈에
         </h2>
         <p className="max-w-3xl text-sm md:text-base text-gray-600 dark:text-gray-400">
-          별도 상세 페이지 없이 한 화면에서 설계 의도, 기술 스택, 성과를
-          요약해 보여줍니다.
+          LG전자 · 딜리버러 · 핏펫에서 진행한 End-to-End 개선 사례를 이미지와 함께 요약했습니다.
         </p>
       </div>
 
       {primaryFeatured && (
-        <div className="mb-14 grid gap-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
-          <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-[0_20px_60px_rgba(10,64,118,0.08)] backdrop-blur dark:border-slate-800 dark:bg-slate-900/70">
+        <div className="mb-14 grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
+          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/95 p-6 shadow-[0_24px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-slate-800 dark:bg-slate-900/85">
             <div className="absolute inset-0 pointer-events-none">
-              <div className="absolute -left-10 top-10 h-32 w-32 rounded-full bg-[#0E5CAD]/12 blur-3xl" />
-              <div className="absolute bottom-[-3rem] right-[-2rem] h-40 w-40 rounded-full bg-indigo-400/12 blur-3xl" />
+              <div className="absolute -left-10 top-14 h-28 w-28 rounded-full bg-slate-200/40 blur-3xl dark:bg-slate-700/30" />
             </div>
             <div className="relative flex flex-col gap-4">
-              <div className="inline-flex items-center gap-2 self-start rounded-full border border-[#0E5CAD]/20 bg-[#0E5CAD]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#0E5CAD]">
+              <div className="inline-flex items-center gap-2 self-start rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100">
                 <span className="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
                 Featured
               </div>
@@ -67,17 +65,17 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
               </p>
               <div className="flex flex-wrap gap-2 text-xs font-medium text-slate-700 dark:text-slate-200">
                 {primaryFeatured.duration && (
-                  <span className="rounded-full border border-slate-200/80 bg-slate-50 px-3 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+                  <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-800">
                     {primaryFeatured.duration}
                   </span>
                 )}
                 {primaryFeatured.role && (
-                  <span className="rounded-full border border-slate-200/80 bg-slate-50 px-3 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+                  <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-800">
                     {primaryFeatured.role}
                   </span>
                 )}
                 {primaryFeatured.teamSize && (
-                  <span className="rounded-full border border-slate-200/80 bg-slate-50 px-3 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+                  <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-800">
                     팀 {primaryFeatured.teamSize}
                   </span>
                 )}
@@ -86,17 +84,17 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                 {primaryFeatured.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="rounded-full border border-slate-200/80 bg-slate-50 px-3 py-1 text-xs text-slate-700 shadow-sm dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"
+                    className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs text-slate-700 shadow-sm dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
               {primaryFeatured.features && primaryFeatured.features.length > 0 && (
-                <div className="grid gap-2 rounded-2xl border border-slate-200/70 bg-slate-50/60 p-4 text-sm text-slate-800 shadow-sm dark:border-slate-700 dark:bg-slate-800/70 dark:text-slate-100">
+                <div className="grid gap-2 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-800 shadow-sm dark:border-slate-700 dark:bg-slate-800/70 dark:text-slate-100">
                   {primaryFeatured.features.slice(0, 4).map((feature, idx) => (
                     <div key={idx} className="flex items-start gap-2">
-                      <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-[#0E5CAD]" />
+                      <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-slate-900 dark:bg-slate-100" />
                       <span className="leading-relaxed">{feature}</span>
                     </div>
                   ))}
@@ -118,7 +116,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                     href={primaryFeatured.links.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full bg-[#0E5CAD] px-4 py-2 text-white text-xs sm:text-sm font-semibold shadow-sm transition-colors hover:bg-[#0c4a86]"
+                    className="inline-flex items-center gap-2 rounded-full border border-slate-900 bg-slate-900 px-4 py-2 text-white text-xs sm:text-sm font-semibold shadow-sm transition-colors hover:bg-slate-800 dark:border-slate-200 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
                   >
                     Live Demo
                   </a>
@@ -127,7 +125,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
             </div>
           </div>
 
-          <div className="relative h-full overflow-hidden rounded-3xl border border-slate-200/80 bg-white/90 shadow-[0_20px_60px_rgba(10,64,118,0.08)] backdrop-blur dark:border-slate-800 dark:bg-slate-900/70">
+          <div className="relative h-full overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.08)] dark:border-slate-800 dark:bg-slate-900">
             <Image
               src={primaryFeatured.image}
               alt={primaryFeatured.title}
@@ -143,7 +141,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
           {remainingProjects.map((project) => (
             <div
               key={project.slug}
-              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white/90 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900/70"
+              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white/95 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900/80"
             >
               <div className="relative h-44 overflow-hidden bg-gray-50 dark:bg-slate-800">
                 <Image

@@ -21,49 +21,38 @@ export function HeroSection({
 }: HeroSectionProps) {
   return (
     <section className="py-14 md:py-18">
-      <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-gradient-to-br from-[#0E5CAD] via-[#0b4f94] to-[#0a4076] px-6 py-10 sm:px-10 md:px-14 shadow-[0_30px_90px_rgba(10,64,118,0.32)] dark:border-slate-800">
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -left-24 top-10 h-48 w-48 rounded-full bg-cyan-300/18 blur-3xl" />
-          <div className="absolute right-[-6rem] bottom-[-3rem] h-64 w-64 rounded-full bg-indigo-300/18 blur-3xl" />
-        </div>
-
-        <div className="relative grid items-center gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
+      <div className="rounded-3xl border border-slate-200/90 bg-white/95 px-6 py-10 sm:px-10 md:px-14 shadow-[0_24px_70px_rgba(15,23,42,0.10)] dark:border-slate-800/80 dark:bg-slate-900/90">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.9fr)]">
           <div className="flex flex-col gap-6">
-            <div className="inline-flex items-center gap-2 self-start rounded-full border border-white/25 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-100 shadow-sm">
-              <span className="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-300 shadow-[0_0_0_4px_rgba(16,185,129,0.15)]" />
+            <div className="inline-flex items-center gap-2 self-start rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-700 shadow-sm dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100">
+              <span className="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
               <span>Data / AI Platform Engineer</span>
             </div>
 
-            <div className="flex flex-col gap-2">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-white">
+            <div className="flex flex-col gap-3">
+              <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
                 {name}
               </h1>
-              <p className="text-xl md:text-2xl font-medium text-slate-100/90">
+              <p className="text-lg md:text-xl font-medium text-slate-700 dark:text-slate-200">
                 {title}
               </p>
-              <p className="max-w-2xl text-base md:text-lg leading-relaxed text-slate-100/90">
+              <p className="max-w-2xl text-base md:text-lg leading-relaxed text-slate-700/90 dark:text-slate-200/90">
                 {bio}
               </p>
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2">
               {[
-                {
-                  label: "주특기",
-                  value: "Data Platform · AI Agent · Workflow",
-                },
-                {
-                  label: "도구",
-                  value: "FastAPI · Next.js · n8n · Docker",
-                },
-                { label: "스타일", value: "문제 구조화 → 제품화 → 자동화" },
-                { label: "관심", value: "실험 속도 향상, 운영 자동화" },
+                { label: "역할", value: "Data Platform · AI Agent · Automation" },
+                { label: "스택", value: "FastAPI · Next.js · n8n · Docker" },
+                { label: "방식", value: "문제 구조화 → 제품화 → 자동화" },
+                { label: "포커스", value: "실험 속도 · 운영 안정성" },
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/8 px-4 py-3 text-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.12)]"
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200/80 bg-slate-50 px-4 py-3 text-slate-800 shadow-sm dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"
                 >
-                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 text-xs font-semibold uppercase tracking-wide">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-white text-[11px] font-semibold uppercase tracking-wide text-slate-700 shadow-sm dark:bg-slate-900 dark:text-slate-100">
                     {item.label}
                   </div>
                   <span className="text-sm md:text-base leading-relaxed">
@@ -77,7 +66,7 @@ export function HeroSection({
               {email && (
                 <a
                   href={`mailto:${email}`}
-                  className="inline-flex items-center justify-center rounded-xl bg-white px-7 py-3 text-sm font-semibold text-[#0E5CAD] shadow-sm transition-colors hover:bg-slate-100 md:text-base"
+                  className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-7 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200 md:text-base"
                 >
                   메일로 연락하기
                 </a>
@@ -87,7 +76,7 @@ export function HeroSection({
                   href={github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-xl border border-white/25 bg-white/10 px-6 py-3 text-sm font-medium text-slate-50 transition-colors hover:bg-white/15 md:text-base"
+                  className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-medium text-slate-800 shadow-sm transition-colors hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 md:text-base"
                 >
                   GitHub
                 </a>
@@ -97,7 +86,7 @@ export function HeroSection({
                   href={linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-xl border border-white/25 bg-white/10 px-6 py-3 text-sm font-medium text-slate-50 transition-colors hover:bg-white/15 md:text-base"
+                  className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-medium text-slate-800 shadow-sm transition-colors hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 md:text-base"
                 >
                   Portfolio
                 </a>
@@ -105,10 +94,10 @@ export function HeroSection({
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative mx-auto h-52 w-52 sm:h-64 sm:w-64 lg:h-72 lg:w-72">
-              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-tr from-white/30 via-white/10 to-white/25" />
-              <div className="absolute inset-[0.24rem] overflow-hidden rounded-[1.85rem] border border-white/25 bg-slate-950/60 backdrop-blur">
+          <div className="relative flex justify-center">
+            <div className="relative h-64 w-64 sm:h-72 sm:w-72">
+              <div className="absolute inset-[-12%] rounded-[32px] bg-gradient-to-br from-slate-200 via-slate-100 to-white shadow-[0_25px_80px_rgba(15,23,42,0.12)] dark:from-slate-800 dark:via-slate-900 dark:to-slate-900" />
+              <div className="absolute inset-0 overflow-hidden rounded-[28px] border border-slate-200/80 bg-white shadow-lg dark:border-slate-700 dark:bg-slate-900">
                 <Image
                   src={profileImage}
                   alt={name}
@@ -117,28 +106,6 @@ export function HeroSection({
                   priority
                 />
               </div>
-              <div className="absolute -left-4 bottom-6 rounded-2xl border border-white/25 bg-white/12 px-4 py-3 text-xs text-slate-50 shadow-lg backdrop-blur">
-                End-to-End 데이터 & AI 플랫폼을
-                <br />
-                설계·구현·운영합니다.
-              </div>
-            </div>
-
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              {[
-                { title: "6+ years", desc: "데이터/백엔드/플랫폼 경험" },
-                { title: "AI Agent", desc: "n8n · Webhook · LLM 워크플로우" },
-                { title: "Automation", desc: "반복 업무 → 서비스화/제품화" },
-                { title: "Full-stack", desc: "Next.js · FastAPI · DB · DevOps" },
-              ].map((stat) => (
-                <div
-                  key={stat.title}
-                  className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-white shadow-sm backdrop-blur"
-                >
-                  <div className="text-lg font-semibold">{stat.title}</div>
-                  <div className="text-sm text-white/80">{stat.desc}</div>
-                </div>
-              ))}
             </div>
           </div>
         </div>
