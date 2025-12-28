@@ -58,7 +58,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           fullDescription={project.fullDescription}
           duration={project.duration}
           role={project.role}
-          teamSize={project.teamSize}
           challenges={project.challenges}
           solutions={project.solutions}
           features={project.features}

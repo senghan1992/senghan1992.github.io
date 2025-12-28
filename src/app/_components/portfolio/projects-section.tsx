@@ -15,7 +15,6 @@ interface Project {
   featured?: boolean;
   duration?: string;
   role?: string;
-  teamSize?: string;
   features?: string[];
 }
 
@@ -72,11 +71,6 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                 {primaryFeatured.role && (
                   <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-800">
                     {primaryFeatured.role}
-                  </span>
-                )}
-                {primaryFeatured.teamSize && (
-                  <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-800">
-                    팀 {primaryFeatured.teamSize}
                   </span>
                 )}
               </div>
@@ -169,11 +163,6 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                   {project.role && (
                     <span className="rounded-full border border-slate-200/80 bg-slate-50 px-2.5 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-800">
                       {project.role}
-                    </span>
-                  )}
-                  {project.teamSize && (
-                    <span className="rounded-full border border-slate-200/80 bg-slate-50 px-2.5 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-800">
-                      팀 {project.teamSize}
                     </span>
                   )}
                 </div>

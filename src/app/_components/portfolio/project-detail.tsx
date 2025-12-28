@@ -15,7 +15,6 @@ interface ProjectDetailProps {
   fullDescription: string;
   duration: string;
   role: string;
-  teamSize: string;
   challenges: string[];
   solutions: string[];
   features: string[];
@@ -33,7 +32,6 @@ export function ProjectDetail({
   fullDescription,
   duration,
   role,
-  teamSize,
   challenges,
   solutions,
   features,
@@ -130,12 +128,6 @@ export function ProjectDetail({
             Role
           </h3>
           <p className="text-lg font-medium">{role}</p>
-        </div>
-        <div>
-          <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
-            Team Size
-          </h3>
-          <p className="text-lg font-medium">{teamSize}</p>
         </div>
       </div>
 

@@ -2,7 +2,7 @@
   "profile": {
     "name": "변승환",
     "title": "Data / AI Platform Engineer",
-    "bio": "사용자의 문제를 기술로 구조화하고, 그 해결 과정을 서비스로 완성해 더 큰 가치를 만드는 엔지니어입니다. 데이터 파이프라인과 AI Agent 기반 자동화를 통해 제품 임팩트를 높이고, 팀이 가치를 더 빠르게 실험할 수 있는 AI Platform을 만듭니다.",
+    "bio": "복잡한 데이터 흐름을 자동화된 서비스로 연결하는 Data / AI 플랫폼 엔지니어입니다. 데이터 파이프라인, AI Agent 오케스트레이션, 플랫폼 엔지니어링을 통해 팀이 더 빠르게 가치를 실험하고 전달하도록 돕습니다.",
     "email": "senghan1992@gmail.com",
     "github": "https://github.com/korea-seunghwan",
     "linkedin": "https://korea-seunghwan.github.io",
@@ -10,11 +10,11 @@
     "resumeUrl": "/files/resume.pdf"
   },
   "about": {
-    "description": "데이터와 AI를 활용해 사용자의 문제를 해결하고 제품 가치를 높이는 데 집중합니다. 백엔드/데이터 엔지니어링 기반에서 서비스 운영 자동화, AI Agent 워크플로우, 데이터 파이프라인 설계까지 전 주기를 경험했습니다. 복잡한 요구사항을 단순하게 구조화하고, 빠른 실험이 가능한 플랫폼을 만드는 것을 좋아합니다.",
+    "description": "데이터와 AI를 활용해 실제 비즈니스 문제를 해결하는 플랫폼을 만듭니다. 백엔드와 데이터 엔지니어링을 기반으로 서비스 자동화, AI Agent 워크플로우, 확장 가능한 데이터 파이프라인을 설계·구현해왔습니다. 복잡한 요구를 단순하게 구조화하고, 빠르게 실험할 수 있는 기반을 구축하는 일을 좋아합니다.",
     "highlights": [
-      "데이터 수집·분석·AI 추론이 하나로 이어지는 End-to-End 플랫폼 설계",
-      "n8n + Webhook 기반 AI Agent 워크플로우로 반복 업무 자동화",
-      "모바일/웹/백엔드/데이터를 모두 다루는 풀스택 문제 해결 경험"
+      "데이터 수집 → 분석 → AI 추론을 하나로 잇는 End-to-End 플랫폼 설계",
+      "n8n + Webhook 기반의 AI Agent 워크플로우 자동화",
+      "모바일·웹·백엔드·데이터 인프라를 아우르는 풀스택 문제 해결"
     ]
   },
   "experience": [
@@ -75,9 +75,7 @@
       "Tailwind CSS"
     ],
     "Application": [
-      "Flutter",
-      "React Native (기초)",
-      "GraphQL / REST"
+      "Flutter"
     ]
   },
   "projects": [
@@ -94,7 +92,6 @@
       "fullDescription": "Self-Service 데이터 요청과 AI 기반 분석을 연결하는 통합 플랫폼입니다. 데이터 추출→가공→AI 추론을 하나의 워크플로우로 묶어 팀이 반복 업무를 자동화하도록 했습니다.",
       "duration": "2023.03 - 현재",
       "role": "Data Platform Engineer",
-      "teamSize": "3명",
       "challenges": [
         "보안 제약 환경에서의 자동화 파이프라인 구축",
         "사용자 입력 조건을 유연하게 데이터 파이프라인에 반영",
@@ -133,9 +130,8 @@
       },
       "featured": true,
       "fullDescription": "창업 멤버로 설계부터 배포까지 담당한 운영 플랫폼입니다. 크로스플랫폼 앱과 Admin 대시보드로 운영 자동화와 실시간 모니터링을 제공했습니다.",
-      "duration": "2020.01 - 2022.12",
+      "duration": "2019.09 - 2022.12",
       "role": "Full-Stack Engineer",
-      "teamSize": "3명",
       "challenges": [
         "실시간 주문/배차 동기화와 안정성 확보",
         "모바일/웹 간 일관된 UX 제공",
@@ -174,7 +170,6 @@
       "fullDescription": "관리자/Admin 기능을 빠르게 구축한 뒤, 모바일 확장과 로그/알람 구조 개선을 위해 Node.js 기반 마이크로서비스로 이전했습니다.",
       "duration": "2019.04 - 2019.09",
       "role": "Backend Engineer",
-      "teamSize": "4명",
       "challenges": [
         "PHP(Laravel)에서 Node.js 마이크로서비스로의 단계적 이전",
         "모바일 앱 내부 API 호환성 및 로깅/알람 구조 개선",
